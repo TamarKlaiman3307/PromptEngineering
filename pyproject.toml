@@ -1,0 +1,24 @@
+[project]
+name = "promptengineering"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "tamar", email = """
+mkt@malot.org.il
+
+git config --global user.email""" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "google-genai>=2.34.0",
+    "gradio>=6.31.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+promptengineering = "promptengineering:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
